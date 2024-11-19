@@ -1,0 +1,722 @@
+:root {
+    --fuente_Principal: "Montserrat", serif;;
+    --textoNegrita: 900;
+    --textoNormal: 400;
+    --textoThin: 100;
+
+    --colorPrincipal: #494758;
+    --colorTitulos: #4e49d6;
+
+    --bgPrincipal: #fbfaff;
+    --bgSecundario: #eae8f3;
+    --bgBannerPrincipal: #ffffff;
+    --bgBannerSecundario: #ebdefe;
+    --bgBtnPrincipal: #413fcf;
+}
+
+body{
+    font-family: var(--fuente_Principal);
+    font-size: 16px;
+}
+
+
+/** ::: Bloque header :::**/
+.bloqueHeader {
+    display: flex;
+    height: 600px;
+    
+}
+ 
+.bloqueHeader_contenedorImagen{
+    width: 40%;
+}
+
+.ImagenHeader{
+    height: 100%;
+    width: 100%;
+}
+
+.bloqueHeader_contenedorInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    width: 50%;
+}
+
+.bloqueHeader_contenedorInfoTitulo{
+    color: var(--colorTitulos);
+    font-size: 2rem;
+    font-weight: var(--textoNegrita);
+
+}
+
+.bloqueHeader_contenedorParrafo{
+    color: var(--colorPrincipal);
+    font-size: 1.4rem;
+    font-weight:var(--textoNormal) ;
+}
+
+
+/********************************************************************************/
+/*Empezar la seguda pagina*/ 
+
+
+body {
+ 
+    background-color: var(--bgPrincipal);
+}
+
+.bloqueHeader_contenedorSecciones {   /* para las  3 secciones*/ 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+} 
+.bloqueHeader_seccion h2 {
+    font-size: 1.4rem;
+    color: var(--colorTitulos);
+    font-weight: var(--textoNegrita);
+}
+
+.bloqueHeader_seccion p {
+    font-size: 1.2rem;
+    color: var(--colorPrincipal);
+    font-weight: var(--textoNormal);
+}
+@media (max-width: 768px) {
+    .bloqueHeader_contenedorSecciones {
+        grid-template-columns: 1fr;
+    }
+}
+
+.bloqueHeader_contenedor3secciones {
+    padding: 8rem;
+    width: 200%;
+}
+
+/*******************************************************************************/
+
+/** ::: Sección Menú ::: */
+.menu__titulo {
+    font-size: 2.5rem;
+    text-align:center;
+    color: var(--colorTitulos);
+    margin-bottom: 2rem;
+}
+
+/* Contenedor principal */
+.menu__contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 12000px;  
+}
+
+.menu__textos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.4rem;
+    flex: 1;
+    max-width: 600px;
+}
+
+.menu__item--valores {
+    grid-column: span 2; 
+}
+
+.menu__item {
+    background-color: rgb(237, 240, 243);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(73, 68, 68, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.menu__imagen {
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu__imagen-img {
+    width: 110%; 
+    height: 520px; 
+    border-radius: 10px;
+    object-fit: cover; 
+}
+
+
+/***********************************************************************/
+
+/*Pagina 4*/ 
+.contenedor-principal {
+    display: flex;
+    align-items: flex-start;
+    padding: 2em;
+    gap: 2em;
+}
+
+.contenido-texto {
+    width: 60%;
+}
+
+.contenido-texto h1 {
+    color: var(--colorTitulos);
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+/* Grid de tarjetas */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.tarjeta {
+    padding: 1.5em;
+    border-radius: 5px;
+    color: var(--colorTexto);
+}
+
+.icono {
+    font-size: 1.5em;
+    color: var(--colorPrimario);
+}
+
+
+.contenedor-imagen {  /* Contenedor de la imagen */
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.imagen-menu {
+    width: 120%; 
+    height: 580px; 
+    border-radius: 10px;
+    object-fit: cover; 
+}
+
+
+/*********************************************************************/
+
+/*pagina 5*/
+:root {
+    --colorSecundario: #e2dfeb;
+    --colorTexto: #302d2d;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.seccion-ubicacion {
+    text-align: center;
+    padding: 2em;
+    background-color: var(--colorFondo);
+    position: relative;
+}
+
+
+.imagen-fondo img {
+    width: 100%;
+    height: 20vh; 
+    object-fit: cover;
+}
+
+.seccion-ubicacion h1 {
+    font-size: 2rem;
+    color: var(--colorTitulos);
+    margin-bottom: 2rem;
+}
+.linea-tiempo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3em;
+    padding-top: 1em;
+    position: relative; 
+}
+
+/* Línea principal que conecta los pasos */
+.linea-tiempo::before {
+    content: '';
+    position: absolute;
+    top: 1.5em; 
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #ccc;
+
+}
+.numero {
+    position: relative;
+    background-color: var(--colorSecundario);
+    color: #fff;
+    width: 2.4em;
+    height: 2.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0.5em;  
+}
+
+.elemento {
+    text-align: center;
+    max-width: 200px;
+    font-size: 14px;
+}
+
+.elemento h2 {
+    font-size: 1.4em;
+    color: var(--colorPrimario);
+    margin-bottom: 0.5em;
+}
+
+.elemento p {
+    font-size: 0.9em;
+    color: var(--colorTexto);
+}
+
+/*******************************************************************************/
+/*pagina 6*/
+.promociones__titulo {
+    font-size: 2.5rem;
+    text-align: left;
+    color: #3e51c9; 
+}
+
+.promociones__contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.promociones__textos {
+    flex: 1;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.promociones__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+
+.promociones__numero {
+        clip-path: polygon(56% 38%, 100% 0, 100% 80%, 56% 100%, 0 80%, 0 0);
+        font-size: 5rem; 
+        font-weight: bold;
+        color: white;
+        background-color: #d3d8e3; 
+        border-radius: 50%;
+        width: 150px; 
+        height: 150px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+.promociones__contenido {
+    text-align: left;
+}
+.promociones__subtitulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #525255; 
+    margin-bottom: 0.5rem;
+}
+
+
+.promociones__descripcion {
+    font-size: 1rem;
+    color: #333;
+}
+.promociones__imagen {
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.promociones__imagen-img {
+    width: 90%; 
+    height: 560px; 
+    border-radius: 10px;
+    object-fit: cover; 
+}
+
+
+/*****************************************************************/
+
+/*pagina 7*/
+.oferta__titulo {
+    font-size: 2.5rem;
+    text-align: Alfred;
+    color: var(--colorTitulos);
+    margin-bottom: 2rem;
+}
+
+.oferta__contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.oferta__textos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    flex: 1;
+    max-width: 600px;
+}
+
+.oferta__item--combinaciones {
+    grid-column: span 2;
+}
+
+.oferta__item {
+    background-color: var(--colorItem);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: left;
+    box-shadow: 0 2px 5px var(--shadowLight);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.oferta__item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px var(--shadowHover);
+}
+
+/* Imagen */
+.oferta__imagen {
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.oferta__imagen-img {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/**********************************************************************/
+
+/*Se reutilozo cdodigo*/
+
+
+/*pagina 9*/
+
+.proximos-pasos {
+    padding: 3rem;
+    text-align: center;
+}
+
+.proximos-pasos-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.proximos-pasos-texto {
+    flex: 1;
+    max-width: 600px;  
+}
+
+.proximos-pasos h1 {
+    font-size: 2.5rem;
+    color: var(--colorTitulos);
+    margin-bottom: 1rem;
+}
+
+.proximos-pasos p {
+    font-size: 1.4rem;
+    color: var(--colorTexto);
+    margin-bottom: 2rem;
+}
+
+.proximos-pasos-botones {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.boton-reserva, .boton-reserve {
+    background-color: rgb(66, 66, 233);
+    color: black;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.boton-reserva:hover, .boton-reserve:hover {
+    background-color: darkblue;
+}
+
+
+.proximos-pasos-imagen {
+    flex: 1;
+    max-width: 550px;
+    text-align: center;
+}
+
+.imagen-restaurante {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .proximos-pasos-contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proximos-pasos-botones {
+        flex-direction: column;
+    }
+
+    .boton-reserva, .boton-reserve {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/*pagina 10*/
+
+.pagina10 {
+    width: 100%;
+}
+
+.pagina10-imagen {
+    width: 100%;
+    height: 20vh; 
+    overflow: hidden;
+}
+
+.pagina10-imagen-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Se reutilozp codigo**/
+.pagina10-menu__titulo {
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--colorTitulos);
+    margin-bottom: 2rem;
+}
+
+
+.pagina10-menu__contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+
+.pagina10-menu__textos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1.5rem;
+    flex: 1;
+    max-width: 900px;
+}
+
+
+.pagina10-menu__item {
+    background-color: rgb(237, 240, 243);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pagina10-menu__item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pagina10-menu__item-titulo {
+    font-size: 1.5rem;
+    color: var(--colorTitulos);
+    margin-bottom: 1rem;
+}
+
+.pagina10-menu__item-descripcion {
+    font-size: 1rem;
+    color: var(--colorTexto);
+}
+
+
+.pagina10-menu__imagen {
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagina10-menu__imagen-img {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .pagina10-menu__textos {
+        grid-template-columns: 1fr;
+    }
+
+    .pagina10-menu__item {
+        margin-bottom: 2rem;
+    }
+
+    .pagina10-menu__imagen-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+/*responsibilidad */
+
+/* Ajustes globales para dispositivos móviles */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;  /* Reduce el tamaño de fuente en pantallas más pequeñas */
+    }
+
+    .bloqueHeader {
+        flex-direction: column; /* Pone el header en columna en lugar de fila */
+        height: auto;
+    }
+
+    .bloqueHeader_contenedorImagen, 
+    .bloqueHeader_contenedorInfo {
+        width: 100%;
+        padding: 1rem; /* Menos espacio en móviles */
+    }
+
+    .bloqueHeader_contenedorInfoTitulo {
+        font-size: 1.5rem; /* Títulos más pequeños en móviles */
+    }
+
+    .bloqueHeader_contenedorParrafo {
+        font-size: 1.2rem; /* Fuente más pequeña */
+    }
+
+    /* Secciones en una sola columna en dispositivos móviles */
+    .bloqueHeader_contenedorSecciones {
+        grid-template-columns: 1fr;
+    }
+
+    /* Ajuste para el menú */
+    .menu__titulo {
+        font-size: 2rem; /* Fuente más pequeña */
+    }
+
+    .menu__contenedor {
+        flex-direction: column; /* Cambia a columna en móviles */
+    }
+
+    .menu__item {
+        width: 100%; /* Asegura que cada ítem ocupe todo el ancho en móviles */
+        margin-bottom: 1rem;
+    }
+
+    .menu__imagen-img {
+        width: 100%; /* Ajusta el tamaño de la imagen */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+
+    /* Ajuste de las tarjetas */
+    .grid {
+        grid-template-columns: 1fr; /* Una sola columna en dispositivos pequeños */
+    }
+
+    /* Sección de promociones */
+    .promociones__contenedor {
+        flex-direction: column; /* Cambia la dirección a columna */
+    }
+
+    .promociones__imagen-img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Botones responsivos */
+    .boton-reserva, .boton-reserve {
+        width: 100%; /* Botones ocupan todo el ancho en pantallas pequeñas */
+        text-align: center;
+        padding: 1rem;
+    }
+
+    /* Sección de ubicación */
+    .linea-tiempo {
+        flex-direction: column; /* Cambia la alineación de la línea de tiempo a columna */
+    }
+
+    .numero {
+        font-size: 2rem; /* Reduce el tamaño de los números */
+    }
+
+    /* Otros ajustes generales */
+    .pagina10-menu__textos {
+        grid-template-columns: 1fr 1fr; /* Menú en dos columnas en móviles */
+    }
+
+    .pagina10-imagen-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
